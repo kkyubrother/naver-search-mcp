@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "naver-search": {
+      "command": "node",
+      "args": ["dist/src/index.js"],
+      "env": {
+        "NAVER_CLIENT_ID": "YOUR_NAVER_CLIENT_ID",
+        "NAVER_CLIENT_SECRET": "YOUR_NAVER_CLIENT_SECRET"
+      }
+    }
+  }
+}

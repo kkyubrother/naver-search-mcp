@@ -178,6 +178,29 @@ docker run -i --rm \
   mcp/naver-search
 ```
 
+## MCPo 클라이언트로 실행
+
+1. MCPo 설치:
+   ```bash
+   pip install mcpo
+   ```
+2. 예시 구성 파일을 복사하고 환경 변수를 채웁니다:
+   ```bash
+   cp config.example.json config.json
+   # config.json 안의 NAVER_CLIENT_ID, NAVER_CLIENT_SECRET 값을 수정
+   ```
+3. 서버 빌드:
+   ```bash
+   npm install
+   npm run build
+   ```
+4. MCPo 실행:
+   ```bash
+   mcpo --config config.json
+   ```
+
+기본적으로 MCPo는 `http://localhost:8000`에서 실행되며 `/docs` 페이지에서 도구를 테스트할 수 있습니다.
+
 ## Claude Desktop 구성
 
 `claude_desktop_config.json`에 추가:
