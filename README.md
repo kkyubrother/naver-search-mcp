@@ -168,6 +168,15 @@ export NAVER_CLIENT_SECRET=your_client_secret
 npx @isnow890/naver-search-mcp
 ```
 
+#### Run with MCPO (dist only)
+
+```bash
+npm install
+npm run build
+rm -rf node_modules
+mcpo --env NAVER_CLIENT_ID=your_client_id --env NAVER_CLIENT_SECRET=your_client_secret -- node dist/index.cjs
+```
+
 #### Run with Docker
 
 ```bash
